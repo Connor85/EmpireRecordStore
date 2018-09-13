@@ -4,7 +4,7 @@ namespace Empire.Controllers
 {
     public class CDController : Controller
     {
-      [HttpGet("/cd")]
+      [HttpGet("/cd/new")]
       public ActionResult CDForm()
       {
           return View();

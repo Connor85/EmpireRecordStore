@@ -1,0 +1,12 @@
+<h3>Here are all the Artists in your collection.</h3>
+
+<ol>
+  @foreach (var artist in @Model)
+  {
+    <li><a href='artist/@artist.GetId()'>@artist.GetName()</a></li>
+  }
+</ol>
+
+<p><a href ='artist/new'>Add a new artist.</a></p>
+<p><a href =''>Add a new artist.</a></p>
+<p><a href ="/">Return to main page.</a></p>
