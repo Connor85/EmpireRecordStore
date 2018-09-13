@@ -1,0 +1,11 @@
+<h3>Here are all the CDs in your collection.</h3>
+
+<ol>
+  @foreach (var cd in @Model)
+  {
+    <li>@cd.GetTitle()</li>
+  }
+</ol>
+
+<p><a href ='/CDForm'>Add a new CD.</a></p>
+<p><a href ="/">Return to main page.</a></p>
