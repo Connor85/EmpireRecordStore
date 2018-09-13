@@ -2,10 +2,10 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Empire.Controllers
 {
-    public class HomeController : Controller
+    public class ArtistController : Controller
     {
-      [HttpGet("/")]
-      public ActionResult Index()
+      [HttpGet("/artist/new")]
+      public ActionResult ArtistForm()
       {
           return View();
       }
